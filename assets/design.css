@@ -381,6 +381,14 @@ a:visited {
 
 @media (max-width: 768px) {
 
+    body {
+        font-size: 10px;
+    }
+
+    div {
+        height: auto;
+    }
+
     ul {
         display: flex;
         flex-direction: row;
@@ -389,11 +397,15 @@ a:visited {
         justify-content: center;
     }
 
+    .header {
+        padding: 5vw;
+    }
+
     .sidebar {
         top: 0;
         position: fixed;
         padding-top: 2vw;
-        padding-left: 0.5vw;
+        padding-left: 0vw;
         padding-right: 0.5vw;
         width: 100vw;
         height: 10vh;
@@ -404,8 +416,15 @@ a:visited {
         align-items: center;
     }
 
+    .sidebar > h2 {
+        font-size: 20px;
+
+    }
+
     .parentbox2 {
         padding-top: 12vw;
+        padding-left: 0vw;
+        padding-right: 0vw;
         flex-direction: column;
     }
 
@@ -435,26 +454,35 @@ a:visited {
     }
 
     .menuteaser {
-        width: 45vw;
+        width: 90vw;
+        height: 90vh;
+        background-color: #0f020200;
+        box-shadow: none;
     }
 
     .menuteaseritemcontainer {
+        width: 95%;
         gap: 2vw;
         flex-direction: row; 
         flex-wrap: wrap;
         justify-content: center;
     }
 
+    .checkmenu {
+        display: none;
+    }
+
     .menuteaseritem {
         width: 37%;
-        height: 40%;
+        height: 60%;
         padding: 2vw;
         gap: 1vw;
+        font-size: 10px;
     }
 
     .picoverlaycontent {
         font-size: 12px;
-        line-height: 3vw;
+        line-height: 20px;
     }
 
     .checkmenu {
